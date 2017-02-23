@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: TestPiguomApp
+  host: TestPiguomApp
+  disk_quota: 1024M
+  services:
+  - TestPiguomApp-AdvancedMobileAccess
+  - TestPiguomApp-imfpush
+  - TestPiguomApp-cloudantNoSQLDB
+  - availability-monitoring-auto
